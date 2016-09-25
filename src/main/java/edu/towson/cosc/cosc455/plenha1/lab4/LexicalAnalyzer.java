@@ -70,7 +70,8 @@ public class LexicalAnalyzer {
         lexems.add("dawg"); lexems.add("kat"); lexems.add("rat");
         lexems.add("ates"); lexems.add("lovez"); lexems.add("hatez");
 		lexems.add("fat"); lexems.add("hungry"); lexems.add("happy");
-		lexems.add("mean");
+		lexems.add("mean"); lexems.add("accidently"); lexems.add("quickly");
+		lexems.add("secretly");
     }
 
     private boolean lookup(String candidateToken){
