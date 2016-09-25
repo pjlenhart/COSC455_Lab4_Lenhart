@@ -12,8 +12,8 @@ lexeme to find its "class" to determine its token type, as shown in the book. Th
 also limits each lexeme/token to 100 characters or less.
 */
 
-import java.lang.*;
-import java.lang.Compiler;
+
+
 import java.util.List;
 import java.util.ArrayList;
 
@@ -61,7 +61,7 @@ public class LexicalAnalyzer {
 		String newToken = new String(lexeme);
 
         if(lookup(newToken.substring(0, lexLength)))
-            java.lang.Compiler.currentToken_$eq(newToken.substring(0, lexLength));
+            Compiler.currentToken_$eq(newToken.substring(0, lexLength));
 	}
 
     // Add the legal lexems to the language
@@ -69,6 +69,8 @@ public class LexicalAnalyzer {
         lexems.add("\n");lexems.add("teh"); lexems.add("a");
         lexems.add("dawg"); lexems.add("kat"); lexems.add("rat");
         lexems.add("ates"); lexems.add("lovez"); lexems.add("hatez");
+		lexems.add("fat"); lexems.add("hungry"); lexems.add("happy");
+		lexems.add("mean");
     }
 
     private boolean lookup(String candidateToken){
